@@ -15,7 +15,7 @@ def Bubble_sort(arr):
             break
 
 arr=[12,10,9,5,7,2,50,1]
-print(f"Unsorted Array:{arr}")
+print(f"Unsorted list:{arr}")
 
 Bubble_sort(arr)
 print(f"Sorted list:{arr}")
