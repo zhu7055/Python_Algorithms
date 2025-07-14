@@ -11,5 +11,6 @@ def InsertionSort(arr):
         arr[j+1]=key #insertion key到正確的位置
 
 arr=[20,15,10,30,7,6,5]
+print(f"Unsorted List:{arr}")
 InsertionSort(arr)
-print(arr)
+print(f"Sorted List:{arr}")
