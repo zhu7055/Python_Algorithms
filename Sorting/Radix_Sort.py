@@ -52,11 +52,11 @@ def RadixSort(arr):
         CountingSort(arr,exp)
         exp*=10
 
+if __name__=="__main__":
+    arr=[170,60,902,2,13,24,35,76,67]
+    print(f"Unsort List:{arr}")
 
-arr=[170,60,902,2,13,24,35,76,67]
-print(f"Unsort List:{arr}")
-
-print("Sorted List:")
-RadixSort(arr)
-for i in range(len(arr)):
-    print(arr[i],end=" ")
+    print("Sorted List:")
+    RadixSort(arr)
+    for i in range(len(arr)):
+        print(arr[i],end=" ")
