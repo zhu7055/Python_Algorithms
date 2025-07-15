@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5 # 使用 setup-python action
         with:
-          python-version: '3.11' # 指定 Python 版本，可依需求調整
+          python-version: '3.11.9' # 指定 Python 版本，可依需求調整
 
       - name: Install dependencies
         run: | # 運行多行指令
