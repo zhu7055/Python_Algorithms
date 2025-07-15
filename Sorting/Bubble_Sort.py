@@ -14,8 +14,9 @@ def Bubble_sort(arr):
         if not swapped:
             break
 
-arr=[12,10,9,5,7,2,50,1]
-print(f"Unsorted list:{arr}")
+if __name__=="__main__":
+    arr=[12,10,9,5,7,2,50,1]
+    print(f"Unsorted list:{arr}")
 
-Bubble_sort(arr)
-print(f"Sorted list:{arr}")
+    Bubble_sort(arr)
+    print(f"Sorted list:{arr}")
