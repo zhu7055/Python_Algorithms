@@ -1,19 +1,6 @@
-# ... (前面的部分都正確)
-      - name: Run tests
-        run: |
-          # 運行 Python 測試。這裡以 pytest 為例，請根據您的測試框架調整
-          pip install pytest # 如果測試依賴 pytest，需要先安裝
-          pytest # 執行 pytest
-# ... (在 Run tests 之前或之後)
-- name: Run Linter # <--- 應該和上面的 "- name: Run tests" 對齊
-  run: |
-    pip install flake8 # 安裝 flake8
-    flake8 . # 執行 flake8 檢查
-```Run Linter` 這個步驟應該是 `steps:` 列表中的一個元素，所以它前面的 `- name` 應該和 `Set up Python`、`Install dependencies`、`Run tests` 等步驟的 `- name` 對齊。
+###  YML 設定檔：
 
-### 正確的 YAML 設定檔應該是這樣：
 
-```yaml
 name: CI
 
 on:
