@@ -10,11 +10,11 @@ def binary_search(arr,target,low,high):
     else:
         return -1
 
-
-arr=[1,7,13,15,20,50]
-target=15
-result=binary_search(sorted(arr),target,0,len(arr)-1)
-if result!=-1:
-    print(f"Found element at index {result}")
-else:
-    print("Not found")
+if __name__=="__main__":
+    arr=[1,7,13,15,20,50]
+    target=15
+    result=binary_search(sorted(arr),target,0,len(arr)-1)
+    if result!=-1:
+        print(f"Found element at index {result}")
+    else:
+        print("Not found")
