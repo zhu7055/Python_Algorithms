@@ -1,4 +1,4 @@
-def binary_search(arr,target,low,high):
+def binary_search(arr:list[int],target:int,low:int,high:int)->int:
     if low<=high:
         mid=(low+high)//2
         if arr[mid]==target:
