@@ -10,10 +10,10 @@ def MergeSort(arr):
     left=arr[:mid]#左側資料
     right=arr[mid:]#右側資料
 
-    SortedLeft=MergeSort(left)#已排序左側
-    SortedRight=MergeSort(right)#已排序右側
+    sorted_left=MergeSort(left)#已排序左側
+    sorted_right=MergeSort(right)#已排序右側
 
-    return merge(SortedLeft,SortedRight)
+    return merge(sorted_left,sorted_right)
 #merge
 def merge(left,right):
     result=[]
@@ -30,12 +30,12 @@ def merge(left,right):
     result.extend(right[j:])#連接列表到result的後面
 
     return result
+if __name__=="__main__":
+    UnsortedArr=[100,20,13,19,7,2,5,60]
+    n=len(UnsortedArr)
+    print(f"Unsorted Array:",UnsortedArr)
+    #for i in range(n):
+    #   print(f"{UnsortedArr[i]}",end=" ")
 
-UnsortedArr=[100,20,13,19,7,2,5,60]
-n=len(UnsortedArr)
-print(f"Unsorted Array:",UnsortedArr)
-#for i in range(n):
-#   print(f"{UnsortedArr[i]}",end=" ")
-
-SortedArr=MergeSort(UnsortedArr)
-print("Sorted Array:",SortedArr)
+    SortedArr=MergeSort(UnsortedArr)
+    print("Sorted Array:",SortedArr)
