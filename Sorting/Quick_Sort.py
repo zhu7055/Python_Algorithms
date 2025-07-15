@@ -23,9 +23,8 @@ def QuickSort(arr,low,high):#遞迴排序，對基準點的左右兩邊的子數
         QuickSort(arr,low,pivot_index-1)
         QuickSort(arr,pivot_index+1,high)
 #直到每個子數列只剩一個元素或為空，sort完成
-
-new_array=[-2,10,7,5,9,13,20]
-
-print(f"Unsorted Array:{new_array}")
-QuickSort(new_array,0,(len(new_array))-1)
-print(f"Sorted Array:{new_array}")
+if __name__=="__main__":
+    new_array=[-2,10,7,5,9,13,20]
+    print(f"Unsorted Array:{new_array}")
+    QuickSort(new_array,0,(len(new_array))-1)
+    print(f"Sorted Array:{new_array}")
