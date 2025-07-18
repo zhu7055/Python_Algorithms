@@ -7,8 +7,9 @@ def selection_sort(arr:list[int])->list[int]:
                 min_index = j #update the index of the minimum element
         arr[i], arr[min_index] = arr[min_index], arr[i]  #swap the found minimum element    return arr
     return arr
+#main function to test the selection_sort function
 if __name__ == "__main__":
     arr = [64, 25, 12, 22, 11]
     print(f"Original array:{arr}")
     selection_sort(arr)
-    print(f"Sorted array:{arr}")
+    print(f"Sorted array(selection_sort):{arr}")
