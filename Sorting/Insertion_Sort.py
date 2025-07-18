@@ -10,8 +10,9 @@ def InsertionSort(arr):
             j-=1
         arr[j+1]=key #insertion key到正確的位置
 
+#main function to test the insertion_sort function
 if __name__=="__main__":
     arr=[20,15,10,30,7,6,5]
     print(f"Unsorted List:{arr}")
     InsertionSort(arr)
-    print(f"Sorted List:{arr}")
+    print(f"Sorted List(insertion_sort):{arr}")
