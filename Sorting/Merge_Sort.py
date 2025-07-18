@@ -30,6 +30,7 @@ def merge(left,right):
     result.extend(right[j:])#連接列表到result的後面
 
     return result
+#main function to test the merge_sort function
 if __name__=="__main__":
     UnsortedArr=[100,20,13,19,7,2,5,60]
     n=len(UnsortedArr)
@@ -38,4 +39,4 @@ if __name__=="__main__":
     #   print(f"{UnsortedArr[i]}",end=" ")
 
     SortedArr=MergeSort(UnsortedArr)
-    print("Sorted Array:",SortedArr)
+    print("Sorted Array(merge_sort):",SortedArr)
